@@ -21,9 +21,9 @@
       
     }
 
-    #LOGO{
+    #logo{
       width:230px;
-      height:70px;
+      height:60px;
       padding: 15px;
       margin-top: px;
       margin-left : 30px;
@@ -31,10 +31,22 @@
     }
 
     #home{
-      float: left;
-      text-align: center;
       font-size: 20px;
-      text-align: center;
+      padding-right: 10x;
+      padding-right:10px;
+    }
+    #prices{
+      font-size: 20px;
+      padding-right: 10x;
+      padding-right:10px;
+    }
+    #feature_page{
+      font-size: 20px;
+      padding-right: 10x;
+      padding-right:10px;
+    }
+    #team{
+      font-size: 20px;
       padding-right: 10x;
       padding-right:10px;
     }
