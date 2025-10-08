@@ -1,0 +1,41 @@
+ html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: black;
+    }
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #starheader{
+      background-color:black;
+      overflow: hidden;
+      border: 3px;
+      border-color: white;
+      border-bottom-style: outset;
+      
+    }
+
+    #LOGO{
+      width:230px;
+      height:70px;
+      padding: 15px;
+      margin-top: px;
+      margin-left : 30px;
+      margin-bottom: px;
+    }
+
+    #home{
+      float: right;
+      text-align: center;
+      font-size: 20px;
+      background-color: darkgoldenrod;
+      text-align: center;
+      padding-right: 10x;
+      padding-right:10px;
+    }

@@ -1,75 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starlines Corp</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      /* Subtle starry background gradient */
-      background: linear-gradient(135deg, #202040 0%, #3a3a60 100%);
-      position: relative;
-      overflow: hidden;
-    }
-    /* Simple animated stars */
-    .star {
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: twinkle 2s infinite alternate;
-    }
-    @keyframes twinkle {
-      from { opacity: 0.5; }
-      to { opacity: 1; }
-    }
-    .container {
-      position: relative;
-      z-index: 2;
-      max-width: 600px;
-      margin: 100px auto 0 auto;
-      background: rgba(0,0,0,0.6);
-      padding: 2rem;
-      border-radius: 16px;
-      color: #fff;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 0.5em;
-      font-size: 2.5em;
-      letter-spacing: 2px;
-      font-weight: 700;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 1em;
-    }
-  </style>
+  <meta charset="UTF-8" />
+    <link rel="stylesheet" href="STARLINESPRJCT.css">
 </head>
 <body>
-  <!-- Star elements for effect -->
-  <script>
-    // Generate 50 random stars
-    for(let i = 0; i < 50; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.width = star.style.height = `${Math.random() * 3 + 1}px`;
-      star.style.top = `${Math.random() * 100}vh`;
-      star.style.left = `${Math.random() * 100}vw`;
-      star.style.animationDelay = `${Math.random() * 2}s`;
-      document.body.appendChild(star);
-    }
-  </script>
-  <div class="container">
-    <h1>Starlines Corp</h1>
-    <p>Welcome to Starlines Corp, where our vision reaches for the stars.<br>
-    We deliver stellar solutions for your business needs.
-    This page is fully AI generated I just needed something quickly</p>
+  <canvas id="stars"></canvas>
+  <script src="STARLINESCODE.js"></script>
+  <div class="header" id="starheader">
+      <img src="STARLINELOGO2.png" id="LOGO" alt="our logo">
+      <a id="home" class="active" href="#home">Home</a>
+      <a id="prices" href="#our_prices">Our Prices</a>
   </div>
 </body>
 </html>
