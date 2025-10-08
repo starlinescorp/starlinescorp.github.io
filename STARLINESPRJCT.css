@@ -31,10 +31,9 @@
     }
 
     #home{
-      float: right;
+      float: left;
       text-align: center;
       font-size: 20px;
-      background-color: darkgoldenrod;
       text-align: center;
       padding-right: 10x;
       padding-right:10px;
