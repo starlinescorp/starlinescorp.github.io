@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav div {
+  margin-right: 24px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 12px;
+  padding: 0;
+}
+nav a {
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 16px;
+  transition: color 0.2s;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #FFD600;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0) translateY(0);
+  transition: transform 0.3s;
+}
+
+nav a:hover::after {
+  transform: scaleX(1) translateY(6px);
+}
