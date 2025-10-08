@@ -9,16 +9,13 @@
 <body>
   <canvas id="stars"></canvas>
   <script src="script.js"></script>
-  <div class="starheader">
-    <nav>
-      <div><img src="static/logo_name_yellow.png" id="logo" alt="our logo"></div>
-        <ul>
-          <li><a id="home" class="active" href="#home">Home</a></li>
-          <li><a id="prices" class="active" href="#prices">Pricing</a></li>
-          <li><a id="team" class="active" href="#team">Meet the team</a></li>
-          <li><a id="feature_page" class="active" href="#feature_page">Product Features page</a></li>
-        </ul>
-    </nav>
-  </div>
+  <div id="header"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
