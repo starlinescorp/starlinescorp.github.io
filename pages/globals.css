@@ -1,21 +1,30 @@
-
+    nav {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+       padding: 31px;
+    }
+    
     nav ul {
-       list-style-type: none;
+       display: flex;
+       list-style: none;
        margin-left: 0px;
-       padding: 0;
-       overflow: hidden;
-       position: relative;
+       padding: 40px;
+       gap: 1em;
+       position:absolute;
     }
 
     nav li {
-       float: right;
        font-family: "Montserrat", Arial, sans-serif;
     }
 
-    nav a {
+    nav ul a {
        display: block;
-       color: white;
-       text-align: center;
+       color: white;       
        padding: 20px 20px;
        position: relative;
        text-decoration: none;
