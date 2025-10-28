@@ -9,30 +9,43 @@ Starlines Style Guideline
 
 ------- Overall look and feel:
 
-For our website, we wanted to go for something futuristic and sophisticated but also fun; to achieve this, we went with a bright yellow as our main accent colour while utilising thin and mostly sharp lines  throughout the website. As we value innovation, we absolutely did not want to go with anything unoriginal but since the site had to be simple enough to be intuitive and pleasing to the eye, we tried to avoid going overboard (hence the very small colour scheme, seen in the “colours” section). The yellow is mainly used to bring attention to the important details on a certain page; elements like links, buttons and icons/pictograms. 
+For our website, we wanted to go for something futuristic and sophisticated but also fun; to achieve this, we went with a 
+bright yellow as our main accent colour while utilising thin and mostly sharp lines  throughout the website. As we value 
+innovation, we absolutely did not want to go with anything unoriginal but since the site had to be simple enough to be 
+intuitive and pleasing to the eye, we tried to avoid going overboard (hence the very small colour scheme, seen in the 
+“colours” section). The yellow is mainly used to bring attention to the important details on a certain page; elements like 
+links, buttons and icons/pictograms. 
 
 ------- Colours:
 
 *** Colour Scheme in a separate file !!! ***
 
-The blocks of colour in the colour scheme are organized in hierarchical order; from most used colour to least used colour. The black, being the colour of all of the backgrounds, is (as you can see) the most prominent colour. Obviously, we chose black because it is the colour of void, of space. In our website, the backgrounds are accompanied with lovely stars (see interactivity below), making it look even more like space. 
+The blocks of colour in the colour scheme are organized in hierarchical order; from most used colour to least used colour.
+The black, being the colour of all of the backgrounds, is (as you can see) the most prominent colour. Obviously, we chose
+black because it is the colour of void, of space. In our website, the backgrounds are accompanied with lovely stars (see 
+interactivity below), making it look even more like space. 
 
+The colour named “Supernova” (even the name fits the theme) is the aforementioned bright yellow used for accents and 
+important elements. It also is the colour of our logo. Though it is technically for accents, it is quite prominent, making
+it the second most prominent colour in our website.  Supernova is bright, fun, futuristic and, as the name suggests, reminds 
+us of stars like the Sun. 
 
-The colour named “Supernova” (even the name fits the theme) is the aforementioned bright yellow used for accents and important elements. It also is the colour of our logo. Though it is technically for accents, it is quite prominent, making it the second most prominent colour in our website.  Supernova is bright, fun, futuristic and, as the name suggests, reminds us of stars like the Sun. 
+Every design needs elements in white, it was only inevitable that we had some in our website too. White is used for blocks
+of text and to counterbalance the use of Supernova. 
 
-
-Every design needs elements in white, it was only inevitable that we had some in our website too. White is used for blocks of text and to counterbalance the use of Supernova. 
-
-
-Finally the least used colour is the “Deep Bronze”. It is essentially just a darker version of Supernova. This colour is frankly quite rare in the website, it is mainly used for really small details that shouldn’t be getting too much attention from the user, or more importantly for text that needs to be on a white background but that we don’t want to use black for. 
-
+Finally the least used colour is the “Deep Bronze”. It is essentially just a darker version of Supernova. This colour is 
+frankly quite rare in the website, it is mainly used for really small details that shouldn’t be getting too much attention
+from the user, or more importantly for text that needs to be on a white background but that we don’t want to use black for. 
 
  As you can see on the colour scheme, our colour scheme is a very simple monochromatic colour pallet: 
 				white → supernova → deep bronze → black
 
 ------- Layout / Spacing:
 
-The layout will be optimized for a computer screen, a lot of our design ideas work best on a large screen that the user is to scroll through; on smaller screens, the experience will be the same, but with some elements cropped or cut out entirely. The reason for this is because a lot of what makes futuristic design look like it does is the presence of large yet spaced out elements that catch the user’s attention.   
+The layout will be optimized for a computer screen, a lot of our design ideas work best on a large screen that the user is 
+to scroll through; on smaller screens, the experience will be the same, but with some elements cropped or cut out entirely. 
+The reason for this is because a lot of what makes futuristic design look like it does is the presence of large yet spaced 
+out elements that catch the user’s attention.   
 
 ------- Typography:
 
@@ -44,43 +57,64 @@ The fonts we will use for our website are:
   
 *** Font photos in a separate file !!! *** 
   
-Bruno Ace SC is a superellipse sans-serif font. It will be used for headers and important short pieces of text. We wanted something bold, especially for the homepage and we also wanted something that looks futuristic and “spacy”. Bruno is slightly reminiscent of the very recognizable font used for the Star Wars series, which makes it perfect. When someone sees Bruno, they think: “space”. 
+Bruno Ace SC is a superellipse sans-serif font. It will be used for headers and important short pieces of text. We wanted
+something bold, especially for the homepage and we also wanted something that looks futuristic and “spacy”. Bruno is 
+slightly reminiscent of the very recognizable font used for the Star Wars series, which makes it perfect. When someone sees 
+Bruno, they think: “space”. 
 
-Montserrat is a modern geometric sans-serif font. It will be used for mostly everything else; big blocks of text, links in the nav-bar and the bolded version can be used for sub-headers. We chose Montserrat for its readability, simplicity and modern feel. It is a perfect contrast to Bruno, all while still matching with the space / futuristic aesthetic of our project. 
+Montserrat is a modern geometric sans-serif font. It will be used for mostly everything else; big blocks of text, links in 
+the nav-bar and the bolded version can be used for sub-headers. We chose Montserrat for its readability, simplicity and 
+modern feel. It is a perfect contrast to Bruno, all while still matching with the space / futuristic aesthetic of our 
+project. 
 
 ------- Buttons, Links and Icons:
 
 -------------- Buttons:  
 
-* Some buttons will be  simple ghost buttons (transparent with a border) in Supernova or simple white. We want the borders to slightly glow when these buttons are hovered over, to add to the futuristic aesthetic. 
+* Some buttons will be  simple ghost buttons (transparent with a border) in Supernova or simple white. We want the borders
+to slightly glow when these buttons are hovered over, to add to the futuristic aesthetic. 
 
 * Other buttons will simply be images (drawings) that get a little bigger when hovered over.
 
 -------------- Links:
 
-* Our links will have an animated underline when hovered over to make it clear that they are links. If white, they will change to supernova when clicked and vice-versa; they will not be changed permanently however, the links stay the same even when visited. We want to keep them simple enough, so as to not overload the website. 
+* Our links will have an animated underline when hovered over to make it clear that they are links. If white, they will 
+change to supernova when clicked and vice-versa; they will not be changed permanently however, the links stay the same even 
+when visited. We want to keep them simple enough, so as to not overload the website. 
 
 -------------- Icons:
 
-* Our icons will be in the colour supernova, mostly solid and monochrome. We want them to be clean and minimalist while also clearly communicating what they need to communicate; for example: it’s fairly hard to decipher what a simple circle is supposed to mean, but when it is filled and accompanied with another smaller filled circle next to it, on top of a starry background, it’s easy to tell that it is supposed to be a planet with its satellite (*** example picture in separate file!!! ***)
+* Our icons will be in the colour supernova, mostly solid and monochrome. We want them to be clean and minimalist while also 
+clearly communicating what they need to communicate; for example: it’s fairly hard to decipher what a simple circle is 
+supposed to mean, but when it is filled and accompanied with another smaller filled circle next to it, on top of a starry 
+background, it’s easy to tell that it is supposed to be a planet with its satellite
+(*** example picture in separate file!!! ***)
   
 ------- Lists:
 
-Our lists will be simple bulleted lists with a bold dash or an icon as a bullet symbol; it depends on the purpose of the list. For example, in our pricing page, we could use plus signs ( + ) as bullet symbols to list everything that is added extra in different customer tiers.
+Our lists will be simple bulleted lists with a bold dash or an icon as a bullet symbol; it depends on the purpose of the 
+list. For example, in our pricing page, we could use plus signs ( + ) as bullet symbols to list everything that is added 
+extra in different customer tiers.
 
 The navigation bar at the top of each page is an exception to this rule. 
 
 ------- Interactivity:
 
-The website will have an interactive starry background. Essentially, the base of the background will be black, and it will have a separate layer on top containing a lot of little white stars. These stars are by default motionless, but when "disturbed" by the user dragging their mouse across the screen, they are moved around the mouse cursor. It looks as if the cursor and the stars were both charged positively and wanted to avoid each other, or like the cursor was “star-phobic”. This feature not only looks and feels really cool, but it makes the cursor easy to find for the user. 
+The website will have an interactive starry background. Essentially, the base of the background will be black, and it will
+have a separate layer on top containing a lot of little white stars. These stars are by default motionless, but when 
+"disturbed" by the user dragging their mouse across the screen, they are moved around the mouse cursor. It looks as if the
+cursor and the stars were both charged positively and wanted to avoid each other, or like the cursor was “star-phobic”. This
+feature not only looks and feels really cool, but it makes the cursor easy to find for the user. 
 
-
-Furthermore, a lot of our website will be interactive. For example, there will be chunks of text that will be invisible until the user starts to scroll through the page or until the user clicks on a button, etc.
+Furthermore, a lot of our website will be interactive. For example, there will be chunks of text that will be invisible 
+until the user starts to scroll through the page or until the user clicks on a button, etc.
  
 ------- Accessibility:
 
-* We will add descriptive alternative text to all images and icons to ensure screen reader compatibility, allowing visually impaired users to fully get the Starlines experience.
-* Since we decided to use a fairly thin font for most of the text in the website, we will make sure to use colours with a good contrast ratio ( 4.5: 1 ) to ensure readability. Our colour pallet is pretty restrained and has very good contrast.  
+* We will add descriptive alternative text to all images and icons to ensure screen reader compatibility, allowing visually 
+impaired users to fully get the Starlines experience.
+* Since we decided to use a fairly thin font for most of the text in the website, we will make sure to use colours with a 
+good contrast ratio ( 4.5: 1 ) to ensure readability. Our colour pallet is pretty restrained and has very good contrast.  
 
    * Supernova on black has a 12.7 : 1 contrast ratio; very good.
    * White on black has a 21 : 1 contrast ratio; to no one's surprise.
@@ -103,5 +137,6 @@ New pages should be in a folder with their name. They should follow the followin
 
 -------------- Images and other files:
 
-These elements should all go in the static folder “ globals.css ”; that is the CSS file that every page should share and it shows the basics, like the font-family for headers and paragraphs, the colour for buttons, etc.
+These elements should all go in the static folder “ globals.css ”; that is the CSS file that every page should share and it
+shows the basics, like the font-family for headers and paragraphs, the colour for buttons, etc.
 
