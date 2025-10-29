@@ -39,6 +39,7 @@ from the user, or more importantly for text that needs to be on a white backgrou
 
  As you can see on the colour scheme, our colour scheme is a very simple monochromatic colour pallet: 
 				white → supernova → deep bronze → black
+                             #FFFFFF → #FFBF00 → #523E00 → #000000
 
 ------- Layout / Spacing:
 
