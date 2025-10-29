@@ -78,3 +78,11 @@
       
     }
 
+nav a:hover::after {
+  transform: scaleX(1) translateY(6px);
+}
+
+#logopic{
+width: 170px;
+height:50px;
+}
