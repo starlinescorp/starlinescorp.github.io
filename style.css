@@ -1,0 +1,10 @@
+#interstellar{
+   color: white;
+   text-align: center;
+   font-family: "Bruno Ace SC", sans-serif;
+   position: relative;
+   font-size: 180px;
+   margin-top:200px;
+   z-index: 2;
+   background: red;
+}
