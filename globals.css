@@ -100,6 +100,7 @@ html, body {
    background: black;
    min-height: 10vh;
    overflow-x: hidden;
+   padding-top: 75px;
    }
    canvas {
    display: block;
@@ -109,9 +110,17 @@ html, body {
    z-index: -1;
    }
 
+   canvas#stars{
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: -1;
+      pointer-events: none;
+   }
+
    .starheader{
    background-color:black;
-   position:fixed;
    top: 0;
    left: 0;
    width: 100%;
@@ -121,7 +130,7 @@ html, body {
    padding: 0;
    height: 70px;
    overflow: hidden;
-   position: relative;
+   position: fixed;
    z-index: 10;
    }
 
@@ -139,5 +148,14 @@ html, body {
    height:70px;
    margin-left: 20px;
    }
+.hero{
+   padding-top:140px;
+}
 
+main, .hero{
+   position: relative;
+   z-index: 1;
+   color:#fff;
+
+}
    
