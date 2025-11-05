@@ -77,4 +77,13 @@
       }
       
     }
+    nav {
+  z-index: 10;
+   }
+   nav ul {
+  position: static;
+  padding-right: 60px;
+  margin: 0;
+   }
+
 
