@@ -87,3 +87,18 @@ const canvas = document.getElementById('stars');
     }
 
     animate();
+
+const words=["easy","affordable","fast","simple","accessible"];
+let indexx=0;
+const changingWords= document.getElementById("changing-word");
+
+function changeWord(){
+  changingWords.classList.add("fade-out");
+  setTimeout(() => {
+    indexx=(indexx+1)%words.length;
+    changingWords.textContent=words[indexx];
+    changingWords.classList.remove(fade-out);
+}, 500);
+}
+
+setInterval(changeWord,2500)

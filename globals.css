@@ -98,9 +98,8 @@ html, body {
    margin: 0;
    padding: 0;
    background: black;
-   min-height: 10vh;
+   min-height: 100vh;
    overflow-x: hidden;
-   padding-top: 75px;
    }
    canvas {
    display: block;
@@ -115,7 +114,7 @@ html, body {
       top: 0;
       left: 0;
       display: block;
-      z-index: -1;
+      z-index: 0;
       pointer-events: none;
    }
 
@@ -130,7 +129,6 @@ html, body {
    padding: 0;
    height: 70px;
    overflow: hidden;
-   position: fixed;
    z-index: 10;
    }
 
@@ -150,6 +148,9 @@ html, body {
    }
 .hero{
    padding-top:140px;
+   position: relative;
+   z-index: 1;
+   color: #fff;
 }
 
 main, .hero{
