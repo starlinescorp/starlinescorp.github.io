@@ -1,5 +1,5 @@
     nav {
-       position: fixed;
+       position: relative;
        top: 0;
        left: 0;
        width: 100%;
@@ -7,14 +7,22 @@
        align-items: center;
        justify-content: flex-end;
        padding: 31px;
+       gap:1.5cm;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      font-family: "Montserrat", Arial, sans-serif;
+      transition: color 0.3s;
     }
     
     nav ul {
        display: flex;
        list-style: none;
        margin-left: 0px;
-       padding: 40px;
-       gap: 1em;
+       padding: 0px;
+       gap: 1.5em;
        position:absolute;
     }
 
@@ -41,11 +49,11 @@
        left: 0;
        bottom: 0;
        transform: scaleX(0) translateY(-10px);
-       transition: transform 0.3s;
+       transition: transform 0.5s;
     }
 
     nav a:hover::after {
-       transform: scaleX(0.7) translateY(-10px);
+       color: #ffc200;
     }
 
     nav a:active {
@@ -57,7 +65,6 @@
        top: 20px;
        left: 90px;
        width: 142px;
-       height: 25px;
     }
 
     #planet-logo {
@@ -78,3 +85,77 @@
       
     }
 
+nav a:hover::after {
+  transform: scaleX(1) translateY(6px);
+}
+
+#logopic{
+width: 170px;
+height:50px;
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+   background: black;
+   min-height: 10vh;
+   overflow-x: hidden;
+   padding-top: 75px;
+   }
+   canvas {
+   display: block;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   }
+
+   canvas#stars{
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: -1;
+      pointer-events: none;
+   }
+
+   .starheader{
+   background-color:black;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0;
+   height: 70px;
+   overflow: hidden;
+   position: fixed;
+   z-index: 10;
+   }
+
+   #logo{
+   width:230px;
+   height:60px;
+   padding: 15px;
+   margin-top: px;
+   margin-left : 30px;
+   margin-bottom: px;
+   }
+
+   #logopic{
+   width:130px;
+   height:70px;
+   margin-left: 20px;
+   }
+.hero{
+   padding-top:140px;
+}
+
+main, .hero{
+   position: relative;
+   z-index: 1;
+   color:#fff;
+
+}
+   

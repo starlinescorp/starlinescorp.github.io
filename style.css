@@ -207,3 +207,39 @@ html, body {
   margin: 4px 0;
   font-size: 0.9em;
 }
+
+.Interstellar{
+   color: white;
+   text-align: center;
+   font-family: "Bruno Ace SC", sans-serif;
+   position: relative;
+   font-size: 60px;
+   margin-top:10px;
+   z-index: 2;
+}
+
+.title{
+   display: grid;
+   gap: 12px;
+   text-align: center;
+   font-family: "Bruno Ace SC", sans-serif;
+   letter-spacing:1px;
+}
+
+.title .Interstellar{
+   font-size: clamp(40px,8vw,96px);
+   color:#fff;
+}
+
+.title .sub{
+   font-size: clamp(5.5vw);
+   color:#fff;
+   font-family: "Bruno Ace SC", sans-serif;
+   font-weight: 950;
+   text-transform: uppercase;
+}
+
+.title .sub em{
+   font-style: normal;
+   color: #ffc200;
+}
