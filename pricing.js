@@ -88,3 +88,14 @@ const canvas = document.getElementById('stars');
     }
 
     animate();
+const boxes = document.querySelectorAll('.pricing-box') ;
+boxes.forEach(box => {
+    box.addEventListener('mouseenter', () => {
+        box.classList.add('shine');
+    });
+
+
+box.addEventListener('animationend' , () => {
+    box.classList.remove('shine');
+});
+});
