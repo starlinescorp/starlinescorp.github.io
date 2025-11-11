@@ -219,8 +219,22 @@ html, body {
    background-color: transparent;
 }
 
+.sub{
+   display: inline-flex;
+   gap: 0.35em;
+   align-items: baseline;
+}
+
+.word-slot{
+   display: inline-block;
+   position: relative;
+   height: 1em;
+}
+
 .title{
    display: grid;
+   margin: 0 auto;
+   place-items: center;
    gap: 12px;
    text-align: center;
    font-family: "Bruno Ace SC", sans-serif;
@@ -231,7 +245,6 @@ html, body {
 .title .Interstellar{
    font-size: clamp(40px,8vw,96px);
    color:#fff;
-   background-color: trans;
 }
 
 .title .sub{
@@ -240,16 +253,26 @@ html, body {
    font-weight: 950;
    text-transform: uppercase;
    background-color: transparent;
+   display: inline-flex;
+   align-items: baseline;
+   justify-content: center;
+   flex-wrap: nowrap;
+   gap: 0.4hch;
+   white-space: nowrap;
+
 }
 
 .title .sub em{
    font-style: normal;
    color: #ffc200;
-   background-color: transparent;
 }
 
-#easy{
+#changing-word{
    transition: opacity 0.5s ease-in-out;
+   position: absolute;
+   left: 0;
+   top: 0;
+   white-space: nowrap;
 }
 
 .fade-out{
