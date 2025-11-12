@@ -280,16 +280,43 @@ html, body {
    opacity:0;
 }
 
-.rocket{
-  width:800px;
-  height:1000px;
+.launch{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items:flex-end;
+  margin-top:40px;
   z-index:3;
 }
 
-.smoke{
-  position:relative;
+.launch .rocket{
+  width:530px;
+  height:950px;
+  position: relative;
+  z-index: 3;
+}
+
+.launch .smoke{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  pointer-events:none;
   width:100%;
   height:750px;
   z-index:2;
 }
+
+.launch .secondsmoke{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  pointer-events:none;
+  width:100%;
+  height:750px;
+  z-index:4;
+  opacity: 0.7;
+}
+
 
