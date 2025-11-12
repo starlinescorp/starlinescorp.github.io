@@ -87,3 +87,48 @@ const canvas = document.getElementById('stars');
     }
 
     animate();
+
+
+
+const words = ["easy", "affordable", "fun", "fast", "sustainable"];
+let indexx = 0;
+
+function startWordRotator(){
+  const changingWord = document.getElementById("changing-word");
+  const slot = document.querySelector(".word-slot");
+  if(!changingWord || !slot) return;
+
+ 
+  const probe = document.createElement("span");
+  Object.assign(probe.style, {
+    position: "absolute",
+    visibility: "hidden",
+    whiteSpace: "nowrap",
+    fontFamily: getComputedStyle(changingWord).fontFamily,
+    fontWeight: getComputedStyle(changingWord).fontWeight,
+    fontSize:   getComputedStyle(changingWord).fontSize
+  });
+  document.body.appendChild(probe);
+
+  let max = 0;
+  for(const w of words){
+    probe.textContent = w;
+    max = Math.max(max, probe.offsetWidth);
+  }
+  document.body.removeChild(probe);
+  slot.style.width = `${max}px`;    
+
+  function changeWord(){
+    changingWord.classList.add("fade-out");
+    setTimeout(() => {
+      indexx = (indexx + 1) % words.length;
+      changingWord.textContent = words[indexx];
+      changingWord.classList.remove("fade-out"); 
+    }, 500);
+  }
+
+  setInterval(changeWord, 2500);
+}
+
+
+startWordRotator();

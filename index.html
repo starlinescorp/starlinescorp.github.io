@@ -12,11 +12,11 @@
 
 <body>
     <canvas id="stars" aria-hidden="true"></canvas>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <header class="starheader">
      <nav>
-        <div><img src="/static/logo_name_yellow.png" id="name-logo" alt="STARLINE" ></div>
-        <div><img src="/static/logo_planet_yellow.png" id="planet-logo" alt="Our logo, a ringed planet" ></div>      
+        <div><img src="./static/logo_name_yellow.png" id="name-logo" alt="STARLINE" ></div>
+        <div><img src="./static/logo_planet_yellow.png" id="planet-logo" alt="Our logo, a ringed planet" ></div>      
       <ul>
         <li><a id="home" class="active" href="/">Home</a></li>
         <li><a id="feature_page" class="active" href="/features">Our Product</a></li>
@@ -27,10 +27,17 @@
     </header>
     <main class="hero">
       <h1 class="title">
-  <p class="Interstellar"> Interstellar </p>
-<span class="sub"> TRAVEL MADE EASY <em>easy</em></span>
+  <span class="Interstellar"> Interstellar </span>
+<span class="sub"> 
+  TRAVEL MADE 
+  <span class="word-slot">
+   <em id="changing-word">easy</em>
+  </span>
+  </span>
     </h1>
     </main>
+  <img src="./static/smoke.png" class="smoke">
+  <img src="./static/rocket.png" class="rocket">
 </body>
 
 </html>
