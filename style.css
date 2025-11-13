@@ -332,7 +332,7 @@ html, body {
   z-index: 4;
 }
 
-.hero-copy.left  { left: 8%; top: 25rem; width: 40%; }
+.hero-copy.left  { left: 10%; top: 25rem; width: 40%; }
 .hero-copy.right { right: 10%; top: 25rem; width: 24%; }
 
 
