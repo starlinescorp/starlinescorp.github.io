@@ -321,42 +321,18 @@ html, body {
 
 
 
-.hero { position: relative; }
+.hero{ position: relative; }
 
-
-.hero-copy {
+.hero-copy{
   position: absolute;
   color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.7;
-  letter-spacing: 0.2px;
   max-width: 42ch;
   z-index: 4;
-  text-align: left;
 }
 
+.hero-copy.left  { top: 25rem; width: 40%; }
+.hero-copy.right { right: 10%; top: 25rem; width: 24%; }
 
-.hero-copy.left {
-  left: 8%;
-  top: 12rem;
-  width: 40%;
-}
-
-
-.hero-copy.right {
-  right: 10%;
-  top: 20rem;
-  width: 24%;
-}
-
-
-@media (max-width: 900px) {
-  .hero-copy.left,
-  .hero-copy.right {
-    position: static;
-    width: min(90%, 60ch);
-    margin: 1rem auto 0;
-  }
-}
 
