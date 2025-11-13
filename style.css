@@ -319,4 +319,41 @@ html, body {
   opacity: 0.7;
 }
 
+.hero-text {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto 0 auto;   
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  z-index: 5;
+}
+
+
+.hero-text p {
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.4); 
+  padding: 10px 20px;
+  border-left: 3px solid #ffcc00; 
+  border-radius: 6px;
+}
+
+
+.hero-text {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
