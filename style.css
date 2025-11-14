@@ -322,17 +322,29 @@ html, body {
 
 
 .hero{ position: relative; }
-
 .hero-copy{
   position: absolute;
   color: #fff;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Bruno Ace SC", sans-serif;
   line-height: 1.7;
   max-width: 42ch;
-  z-index: 4;
+  z-index: 5;
+}
+.hero-copy.left  { left: 10%; top: 350px; width: 30%; }
+.hero-copy.right { right: 100px; top: 350px; width: 24%; }
+.hero-copy.left { display: grid; gap: 14px; }
+
+#takeoff { 
+  margin-right: -18px;
 }
 
-.hero-copy.left  { left: 10%; top: 25rem; width: 40%; }
-.hero-copy.right { right: 10%; top: 25rem; width: 24%; }
+.hero-copy.left p:not(#takeoff){
+  padding-right: 18px;
+}
+
+@media (min-width: 1400px){
+  #takeoff { margin-right: -24px; }
+  .hero-copy.left p:not(#takeoff){ padding-right: 24px; }
+}
 
 
