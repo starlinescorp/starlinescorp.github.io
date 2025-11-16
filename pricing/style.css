@@ -17,13 +17,6 @@ width: 100vw;
 height: 100vh;
 z-index: 0;
 }
- nav {
-  position:absolute;
-  width: 90%;
-  z-index: 10; 
-  padding: 35px 115px;
-
- }
 
 .sous-title{
     display: flex;
@@ -239,4 +232,69 @@ pricing-box::before {
     background-image: url('static/first_image.png');
     height: 175px;
     width: 90%; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .pricing-container {
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: center !important;
+      gap: 40px;
+      width: 95%;
+      margin: 100px auto;
+    }
+
+    .pricing-box {
+      width: 90% !important;
+      max-width: 350px;
+      margin: 0 !important;
+    }
+
+    .sous-title {
+      margin: 100px 0 40px 0;
+    }
+
+    .sous-title span {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .pricing-container {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .pricing-box {
+      width: 95% !important;
+      max-width: none !important;
+      height: auto;
+      min-height: 500px;
+    }
+
+    .pricing-box h2 {
+      font-size: 28px;
+    }
+
+    .pricing-box p {
+      font-size: 16px;
+    }
+
+    .pricing-box .price {
+      font-size: 24px;
+    }
+
+    .pricing-box button {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+
+    .sous-title {
+      margin: 80px 0 30px 0;
+    }
+
+    .sous-title span {
+      font-size: 24px;
+    }
   }
