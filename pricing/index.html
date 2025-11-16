@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-    <link rel="stylesheet" href="globals.css">
-    <link rel="stylesheet" href="pricing.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/globals.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <title>Starlines</title>
@@ -12,13 +12,17 @@
 </head>
 
 <body>
-    <canvas id="stars"></canvas>
-    <div class="starheader"></div>
-    <script src="script.js"></script>
-    <script src="pricing.js" ></script>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <script src="script.js" defer></script>
+    <header class="starheader">
      <nav>
-        <div><img src="static/logo_name_yellow.png" id="name-logo" alt="STARLINE" ></div>
-        <div><img src="static/logo_planet_yellow.png" id="planet-logo" alt="Our logo, a ringed planet" ></div>      
+        <div><img src="/static/logo_name_yellow.png" id="name-logo" alt="STARLINE" ></div>
+        <div><img src="/static/logo_planet_yellow.png" id="planet-logo" alt="Our logo, a ringed planet" ></div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       <ul>
         <li><a id="home" class="active" href="/">Home</a></li>
         <li><a id="feature_page" class="active" href="/features">Our Product</a></li>
@@ -26,7 +30,7 @@
         <li><a id="team" class="active" href="/team">Meet the team</a></li>
       </ul>
      </nav>
-    </div>
+    </header>
    <div class = "sous-title">
     <span> OUR PRICES </span>
    </div>
