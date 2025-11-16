@@ -3,3 +3,35 @@
    position: absolute;
    font-size: 200px;
 }
+.pfp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffc200;
+  margin-left: 15px;
+}
+.ticket {
+  transition: 0.4s;
+}
+
+.ticket:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffc200;
+}
+.floating-logo {
+  position: absolute;
+  width: 60px;
+  opacity: 0.18;
+  animation: floatlogo 12s ease-in-out infinite;
+}
+
+.floating-logo:nth-child(1) { top: 20%; left: 10%; }
+.floating-logo:nth-child(2) { top: 60%; left: 80%; animation-delay: 2s; }
+.floating-logo:nth-child(3) { top: 80%; left: 30%; animation-delay: 4s; }
+
+@keyframes floatlogo {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0px); }
+}
