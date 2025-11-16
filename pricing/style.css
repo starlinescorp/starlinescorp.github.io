@@ -236,16 +236,18 @@ pricing-box::before {
 
   @media screen and (max-width: 768px) {
     .pricing-container {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: center !important;
       gap: 40px;
       width: 95%;
       margin: 100px auto;
     }
 
     .pricing-box {
-      width: 90%;
+      width: 90% !important;
       max-width: 350px;
+      margin: 0 !important;
     }
 
     .sous-title {
@@ -258,8 +260,15 @@ pricing-box::before {
   }
 
   @media screen and (max-width: 480px) {
+    .pricing-container {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
     .pricing-box {
-      width: 95%;
+      width: 95% !important;
+      max-width: none !important;
       height: auto;
       min-height: 500px;
     }
@@ -279,6 +288,10 @@ pricing-box::before {
     .pricing-box button {
       font-size: 16px;
       padding: 8px 20px;
+    }
+
+    .sous-title {
+      margin: 80px 0 30px 0;
     }
 
     .sous-title span {
