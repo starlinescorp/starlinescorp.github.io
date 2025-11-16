@@ -2,6 +2,9 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: black;
+  overflow-y: auto;
+  min-height: 100vh;
  }
 
 
@@ -13,13 +16,14 @@ left: 0;
 width: 100vw;
 height: 100vh;
 z-index: 0;
-
 }
  nav {
   position:absolute;
-  width: 100%;
-  z-index: 10;
-}
+  width: 90%;
+  z-index: 10; 
+  padding: 35px 115px;
+
+ }
 
 .sous-title{
     display: flex;
@@ -51,14 +55,14 @@ z-index: 0;
     display : flex;
     justify-content: space-between; 
     align-items : flex-start;
-    width: 90%;
-    margin: 200px auto 100px auto;
+    width: 90%;   
+    margin:200px auto 100px auto; 
     box-sizing: border-box;
     margin-top: 0;
     position: relative;
     z-index: 1;
     overflow: visible;
-   
+
 }
 
 .pricing-box{
@@ -236,4 +240,3 @@ pricing-box::before {
     height: 175px;
     width: 90%; 
   }
-  
