@@ -1,35 +1,114 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/globals.css">
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <title>Starlines</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Products - Starlines Corp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <canvas id="stars"></canvas>
-    <script src="script.js"></script>
-    <div class="starheader">
-     <nav>
-        <div><img src="/static/logo_name_yellow.png" id="name-logo" alt="STARLINE" ></div>
-        <div><img src="/static/logo_planet_yellow.png" id="planet-logo" alt="Our logo, a ringed planet" ></div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+    
+    <header class="starheader">
+        <img src="../static/logo_planet_yellow.png" alt="planet logo" id="planet-logo">
+        <a href="../index.html">
+            <img src="../static/logo_name_yellow.png" alt="Starlines Corp" id="name-logo">
+        </a>
+        
+        <nav>
+            <ul id="nav-menu">
+                <li><a id="home" class="active" href="/">Home</a></li>
+                <li><a id="feature_page" class="active" href="/features">Our Product</a></li>
+                <li><a id="prices" class="active" href="/pricing">Pricing</a></li>
+                <li><a id="team" class="active" href="/team">Meet the team</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      <ul>
-        <li><a id="home" class="active" href="/">Home</a></li>
-        <li><a id="feature_page" class="active" href="/features">Our Product</a></li>
-        <li><a id="prices" class="active" href="/pricing">Pricing</a></li>
-        <li><a id="team" class="active" href="/team">Meet the team</a></li>
-      </ul>
-     </nav>
-    </div>
-</body>
+    </header>
 
+    <main>
+        <section class="products-hero">
+            <h1>OUR PRODUCTS</h1>
+            <hr>
+        </section>
+
+        <div class="current-planet-name">
+            <h2 id="currentPlanetName">Mercury</h2>
+        </div>
+
+        <section class="solar-system-container">
+            <button class="nav-arrow left-arrow" id="prevBtn" aria-label="Previous planet">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M25 10 L15 20 L25 30" stroke="#ffc200" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <button class="nav-arrow right-arrow" id="nextBtn" aria-label="Next planet">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M15 10 L25 20 L15 30" stroke="#ffc200" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div class="sun-center">
+                <img src="../static/planets/sun.png" alt="Sun" class="sun-img">
+            </div>
+
+            <div class="ring-container" id="ringContainer">
+                <img src="../static/planets/Ring.png" alt="Ring" class="ring-bg">
+                
+                <div class="planet-orbit">
+                    <div class="planet-item" data-planet="mercury">
+                        <img src="../static/planets/planet_mercury.png" alt="Mercury">
+                    </div>
+                    <div class="planet-item" data-planet="venus">
+                        <img src="../static/planets/planet_venus.png" alt="Venus">
+                    </div>
+                    <div class="planet-item" data-planet="earth">
+                        <img src="../static/planets/planet_earth.png" alt="Earth">
+                    </div>
+                    <div class="planet-item" data-planet="jupiter">
+                        <img src="../static/planets/planet_jupiter.png" alt="Jupiter">
+                    </div>
+                    <div class="planet-item" data-planet="saturn">
+                        <img src="../static/planets/planet_saturn.png" alt="Saturn">
+                    </div>
+                    <div class="planet-item" data-planet="neptune">
+                        <img src="../static/planets/planet_neptune.png" alt="Neptune">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="planet-info" id="planetInfo">
+            <h2 id="planetName">Mercury</h2>
+            <div class="info-divider"></div>
+            <p id="planetDescription">The smallest planet in our solar system and closest to the Sun. Mercury is only slightly larger than Earth's Moon.</p>
+            <div class="planet-stats">
+                <div class="stat">
+                    <span class="stat-label">Distance from Sun:</span>
+                    <span class="stat-value" id="planetDistance">57.9 million km</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Orbital Period:</span>
+                    <span class="stat-value" id="planetPeriod">88 days</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Diameter:</span>
+                    <span class="stat-value" id="planetDiameter">4,879 km</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>

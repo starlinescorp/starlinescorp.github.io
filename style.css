@@ -51,9 +51,11 @@ html, body {
 
 .meet-section h1 {
   color: #ffc200;
-  font-size: 2.2em;
+  font-size: 2.5em;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  font-family: "Bruno Ace SC", sans-serif;
+  text-shadow: 0 0 20px rgba(255, 194, 0, 0.5);
 }
 
 .meet-section hr {
@@ -66,45 +68,12 @@ html, body {
 
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
   justify-items: center;
-  padding: 0 40px;
-}
-
-
-.ticket {
-  width: 330px;
-  height: 150px;
-  border: 3px solid #ffc200;
-  border-radius: 6px;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: white;
-  position: relative;
-}
-
-.ticket img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 2px solid #ffc200;
-}
-
-.ticket .info {
-  text-align: left;
-}
-
-.ticket .info h3 {
-  color: #ffc200;
-  font-size: 1.1em;
-  margin: 0;
-}
-
-.ticket .info p {
-  margin: 4px 0;
+  padding: 0 40px 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 
@@ -136,9 +105,11 @@ html, body {
 }
 .meet-section h1 {
   color: #ffc200;
-  font-size: 2.2em;
+  font-size: 2.5em;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  font-family: "Bruno Ace SC", sans-serif;
+  text-shadow: 0 0 20px rgba(255, 194, 0, 0.5);
 }
 .meet-section hr {
   width: 180px;
@@ -150,60 +121,103 @@ html, body {
 
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
   justify-items: center;
-  padding: 0 40px;
+  padding: 0 40px 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .ticket {
-  width: 330px;
-  height: 150px;
-  border-radius: 8px;
+  width: 380px;
+  height: 180px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 25px;
   position: relative;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 194, 0, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
+              inset 0 0 30px rgba(255, 194, 0, 0.05);
 }
 
 .ticket.yellow {
-  background-color: #ffc200;
-  color: black;
+  background: linear-gradient(135deg, rgba(255, 194, 0, 0.15) 0%, rgba(0, 0, 0, 0.85) 100%);
+  border: 2px solid #ffc200;
+  box-shadow: 0 8px 32px rgba(255, 194, 0, 0.3),
+              inset 0 0 40px rgba(255, 194, 0, 0.1);
 }
+
 .ticket.white {
-  background-color: white;
-  color: black;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.85) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2),
+              inset 0 0 40px rgba(255, 255, 255, 0.05);
 }
 
 .circle {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  background-color: black;
-  border: 2px solid #ffc200;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #ffc200;
   margin-right: 20px;
+  box-shadow: 0 0 20px rgba(255, 194, 0, 0.6),
+              0 0 40px rgba(255, 194, 0, 0.3),
+              inset 0 0 20px rgba(255, 194, 0, 0.1);
 }
 
 .info {
   text-align: left;
+  position: relative;
+  z-index: 3;
+  flex: 1;
 }
 .info h3 {
-  font-size: 1.1em;
-  margin: 0;
+  font-size: 1.3em;
+  margin: 0 0 8px 0;
   font-weight: 700;
+  color: #ffc200;
+  text-shadow: 0 0 10px rgba(255, 194, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .ticket.yellow .info h3 {
-  color: white;
+  color: #ffc200;
+  text-shadow: 0 0 15px rgba(255, 194, 0, 0.8);
 }
 .ticket.white .info h3 {
   color: #ffc200;
+  text-shadow: 0 0 10px rgba(255, 194, 0, 0.6);
 }
 .info p {
-  margin: 4px 0;
+  margin: 6px 0;
+  font-size: 0.95em;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+.info p:first-of-type {
+  color: #ffc200;
+  font-weight: 600;
   font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.info p:last-of-type {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  line-height: 1.4;
+  margin-top: 8px;
 }
 
 .Interstellar{
@@ -419,6 +433,32 @@ html, body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+  }
+  
+  .ticket {
+    width: 340px;
+    height: auto;
+    min-height: 160px;
+    padding: 20px;
+  }
+  
+  .ticket img, .pfp {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .ticket .info h3, .info h3 {
+    font-size: 1.1em;
+  }
+  
+  .ticket .info p, .info p {
+    font-size: 0.85em;
+  }
+  
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0 20px 60px 20px;
   }
 }
 

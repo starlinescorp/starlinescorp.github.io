@@ -116,4 +116,31 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  const tickets = document.querySelectorAll('.ticket');
+  
+  tickets.forEach(ticket => {
+    ticket.addEventListener('mousemove', function(e) {
+      const rect = ticket.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = (y - centerY) / 8;
+      const rotateY = (centerX - x) / 8;
+      
+      ticket.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+      
+      if (ticket.style) {
+        ticket.style.setProperty('--mouse-x', `${x}px`);
+        ticket.style.setProperty('--mouse-y', `${y}px`);
+      }
+    });
+    
+    ticket.addEventListener('mouseleave', function() {
+      ticket.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+    });
+  });
 });

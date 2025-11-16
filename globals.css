@@ -1,4 +1,4 @@
-    nav {
+nav {
        position: relative;
        top: 0;
        left: 0;
@@ -37,6 +37,9 @@
        position: relative;
        text-decoration: none;
        transition: color 0.2s;
+       text-transform: uppercase;
+       font-size: 0.9em;
+       letter-spacing: 0.5px;
     }
 
     nav a::after {
@@ -48,7 +51,7 @@
        position: absolute;
        left: 0;
        bottom: 0;
-       transform: scaleX(0) translateY(-10px);
+       transform: scaleX(0) translateY(-5px);
        transition: transform 0.5s;
     }
 
@@ -186,7 +189,7 @@
     }
 
 nav a:hover::after {
-  transform: scaleX(1) translateY(6px);
+  transform: scaleX(1) translateY(-6px);
 }
 
 #logopic{
@@ -261,4 +264,3 @@ main, .hero{
    color:#fff;
 
 }
-   
