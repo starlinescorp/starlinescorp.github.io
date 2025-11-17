@@ -198,3 +198,73 @@
   50% { transform: translateY(-25px); }
   100% { transform: translateY(0px); }
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .ticket {
+    width: 90%;
+    max-width: 340px;
+    height: auto;
+    min-height: 160px;
+    padding: 20px 15px;
+    margin: 0 auto;
+  }
+  
+  .pfp {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+  }
+  
+  .ticket .info h3,
+  .info h3 {
+    font-size: 1.1em !important;
+  }
+  
+  .ticket .info p,
+  .info p {
+    font-size: 0.85em !important;
+  }
+  
+  .ticket .info p:first-of-type,
+  .info p:first-of-type {
+    font-size: 0.8em !important;
+  }
+  
+  .ticket .info p:last-of-type,
+  .info p:last-of-type {
+    font-size: 0.8em !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ticket {
+    width: 95%;
+    max-width: 320px;
+    padding: 18px 12px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  
+  .pfp {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px auto;
+  }
+  
+  .ticket .info,
+  .info {
+    text-align: center !important;
+  }
+  
+  .ticket .info h3,
+  .info h3 {
+    font-size: 1em !important;
+  }
+  
+  .ticket .info p,
+  .info p {
+    font-size: 0.8em !important;
+  }
+}
