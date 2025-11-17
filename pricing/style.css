@@ -177,6 +177,7 @@ pricing-box::before {
     font-size: 20px;
     color: white;
     margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
   }
   
   
@@ -184,6 +185,7 @@ pricing-box::before {
     font-size: 28px;
     color: #ffc200;
     margin-top: 15px;
+    font-family: 'Bruno Ace SC', sans-serif;
   }
   
   
