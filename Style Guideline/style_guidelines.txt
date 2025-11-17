@@ -3,7 +3,7 @@ CSS & JavaScript
 
 Groupe 18
 
-Starlines Style Guideline
+Starline Style Guideline
 
 *****************************************************************************************************************************
 

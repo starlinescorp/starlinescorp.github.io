@@ -3,9 +3,9 @@ starlinescorp WebPage code for the SEG2900 course
 
 **Team Name**: Star Team
 
-**Project Name**: Starlines Corp.
+**Project Name**: Starline Corp.
 
-**Brief product description**: Starlines Corp is a travel agency that allows its customer to experience the luxury of interstellar travel. We help plan vacations, organize trips and make space accessible for everyone!
+**Brief product description**: Starline Corp is a travel agency that allows its customer to experience the luxury of interstellar travel. We help plan vacations, organize trips and make space accessible for everyone!
 
 ---
 ## Student Names: <p>

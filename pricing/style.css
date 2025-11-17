@@ -207,31 +207,27 @@ pricing-box::before {
   .image-space{
     height: 180px;
     width: 125px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     position: absolute;
-    top: 0% ;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
-  
-   
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
-  .pricing-box:nth-child(1) .image-space {
-    background-image: url('static/economy_image.PNG');
+  .image-space img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
   }
-  .pricing-box:nth-child(2) .image-space {
-    background-image: url('static/business_image.PNG');
-    height: 175px;
-    width: 90%; 
-  }
+
+  .pricing-box:nth-child(2) .image-space,
   .pricing-box:nth-child(3) .image-space {
-    background-image: url('static/first_image.png');
     height: 175px;
-    width: 90%; 
+    width: 90%;
   }
 
   @media screen and (max-width: 768px) {
